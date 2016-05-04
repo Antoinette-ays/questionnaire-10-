@@ -61,11 +61,11 @@ ansArray[7] = "2";
 ansArray[8] = "106";
 ansArray[9] = "2100";
 var score = 0;
-for (var i;i<10;i++)
+for (var i=0;i<10;i++)
 {
-    if (ansArray === aArray)
+    if (ansArray[i] == aArray[i])
     {
-        score++;
+        score+=1;
     }
 }
 document.getElementById("score").value = score;
